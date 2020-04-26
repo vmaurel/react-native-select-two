@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xuho/react-native-select-two.git"
+    "url": "git+https://github.com/vmaurel/react-native-select-two.git"
   },
   "keywords": [
     "react-native",
