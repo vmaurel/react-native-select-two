@@ -19,7 +19,7 @@ import utilities from "./lib/utilities";
 import PropTypes from "prop-types";
 
 const { height } = Dimensions.get("window");
-const INIT_HEIGHT = height * 0.8;
+const INIT_HEIGHT = height * 0.6;
 // create a component
 class Select2 extends Component {
   static defaultProps = {
@@ -204,6 +204,21 @@ class Select2 extends Component {
                 placeholder={searchPlaceHolderText}
                 selectionColor={colorTheme}
                 onChangeText={(keyword) => this.setState({ keyword })}
+                onFocus={() => {
+                  Animated.spring(this.animatedHeight, {
+                    toValue:
+                      INIT_HEIGHT + (Platform.OS === "ios" ? height * 0.2 : 0),
+                    friction: 7,
+                    useNativeDriver: false,
+                  }).start();
+                }}
+                onBlur={() => {
+                  Animated.spring(this.animatedHeight, {
+                    toValue: INIT_HEIGHT,
+                    friction: 7,
+                    useNativeDriver: false,
+                  }).start();
+                }}
               />
             ) : null}
             <FlatList
