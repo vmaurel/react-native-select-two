@@ -1,4 +1,4 @@
-# react-native-select-two
+# react-select2-native
 
 ## Component like [Select2](https://select2.org/) on web for React Native
 
@@ -7,10 +7,10 @@
 ## Add it to your project
 
 - Using NPM
-  `npm install react-native-select-two`
+  `npm install react-select2-native`
 - or:
 - Using Yarn
-  `yarn add react-native-select-two`
+  `yarn add react-select2-native`
 
 ## Install dependencies
 
@@ -22,7 +22,7 @@
 ```javascript
 import React, { Component } from "react";
 import { View, Text, StyleSheet } from "react-native";
-import Select2 from "react-native-select-two";
+import Select2 from "react-select2-native";
 
 const mockData = [
   { id: 1, name: "React Native Developer", checked: true }, // set default checked for render option item
