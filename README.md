@@ -81,5 +81,7 @@ class CreateNewAppointment extends Component {
 | **selectedTitleStyle**    | _Object_       | none              | Set custom style for display selected title text                                            |
 | **buttonTextStyle**       | _Object_       | none              | Set custom button text style                                                                |
 | **buttonStyle**           | _Object_       | none              | Set custom button style                                                                     |
+| **value**                 | _string_       | none              | Selected Value                                                                              |
+| **searchBoxTextChanged**  | _Function_     | none              | Function fired when the search box text has changed                                         |
 
 **MIT Licensed**
